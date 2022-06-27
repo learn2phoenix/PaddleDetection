@@ -43,3 +43,8 @@ LearningRate:
   - !LinearWarmup
     start_factor: 0.1
     steps: 300
+
+wandb:
+  project: picodet
+  entity: ltophoen
+  save_dir: ./logs
