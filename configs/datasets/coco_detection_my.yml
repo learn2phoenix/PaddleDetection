@@ -1,5 +1,5 @@
 metric: COCO
-num_classes: 11
+num_classes: 4
 
 TrainDataset:
   !COCODataSet
@@ -16,6 +16,6 @@ EvalDataset:
 
 TestDataset:
   !ImageFolder
-    image_dir: images/train
+    image_dir: images/test
     anno_path: annotations/instances_test.json # also support txt (like VOC's label_list.txt)
     dataset_dir: ../Auto_PoD_training/data # if set, anno_path will be 'dataset_dir/anno_path'
