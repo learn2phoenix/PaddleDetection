@@ -7,7 +7,9 @@ _BASE_: [
 ]
 
 pretrain_weights: https://paddle-imagenet-models-name.bj.bcebos.com/dygraph/legendary_models/PPLCNet_x0_75_pretrained.pdparams
-weights: output/picodet_s_320_custom_reduced/best_model
+save_dir: output/picodet_s_320_custom_reduced_classes
+weights: output/picodet_s_320_custom_reduced_classes/best_model
+output_eval: evaluations/picodet_s_320_custom_reduced
 find_unused_parameters: True
 use_ema: true
 epoch: 300
